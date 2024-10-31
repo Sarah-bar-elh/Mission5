@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #000000; /* Fond sombre bleu foncé */
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -15,67 +15,73 @@ body {
 
 .base {
     width: 700px;
-    background-color: white;
+    background-color: #000000; /* Bleu sombre pour la carte */
     padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #0d6efd; /* Bordure bleue pour l'effet de lumière */
+    box-shadow: 0 0 20px rgba(253, 13, 13, 0.511); /* Effet lumineux autour de la base */
+    border-radius: 8px; /* Coins arrondis pour un effet plus moderne */
 }
 
 /* En-tête */
 .header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #fd0d0d; /* Ligne de séparation lumineuse */
     padding-bottom: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(253, 13, 13, 0.463); /* Lumière autour de l'en-tête */
 }
 
-.info.name  {
+.info .name {
     font-size: 1.8em;
     margin-bottom: 5px;
-    color: #333;
+    color: #f8f9fa; /* Texte blanc cassé */
 }
 
 .info p {
-    color: #7105fe;
+    color: #f08c8c; /* Bleu clair pour les détails d'information */
 }
 
-/*.photo {
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
-    border: 10px solid #e768d4;
-    border-radius: 50%;
-}*/
+/* Photo circulaire avec effet lumineux */
 .photo {
-    width: 300px; /* Taille du cercle */
-    height: 100px; /* Taille du cercle */
-    overflow: hidden; /* Cache les parties de l'image qui dépassent */
-    border: 2px solid #ddd; /* Bordure pour un effet de cercle */
+    width: 200px; /* Taille du cercle */
+    height: 200px; /* Taille du cercle */
+    border-radius: 50%; /* Rend le conteneur circulaire */
+    overflow: hidden;
+    border: 2px solid #ff0000; /* Bordure bleue lumineuse */
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(253, 13, 13, 0.463); /* Effet de lumière autour de la photo */
 }
 
-
-
+.photo img {
+    width: 300%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Sections */
 .section {
-    border: 2px solid #ddd;
+    border: 2px solid #f40404; /* Bordure bleue lumineuse */
     padding: 15px;
     margin-bottom: 20px;
+    background-color: #230a0a; /* Fond bleu sombre */
+    box-shadow: 0 0 10px rgba(245, 2, 2, 0.5); /* Lumière autour des sections */
+    border-radius: 5px;
 }
-
+.info h1 {
+    color: #f30404;
+}
 .section h2 {
     font-size: 1.5em;
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #f8f9fa; /* Titre en blanc cassé */
+    border-bottom: 2px solid #c53d3d; /* Ligne lumineuse sous le titre */
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-/* Entrée (ligne) avec div gauche et droite */
+/* Entrée (ligne) avec date et description */
 .entry {
     display: flex;
     margin-bottom: 10px;
@@ -83,28 +89,48 @@ body {
 
 .entry .Gauche {
     width: 120px;
-    color: #333;
+    color: #f8f9fa; /* Texte en blanc cassé pour contraste */
     font-weight: bold;
 }
 
 .entry .Droite {
-    color: #555;
+    color: #adb5bd; /* Texte gris clair */
     flex: 1;
 }
 
-/* pour voir les bordure */
+/* Bordure spécifique pour chaque section */
 .formation {
-    border-color: #4CAF50;
+    border-color: #f40404;
 }
 
 .experience {
-    border-color: #2196F3;
+    border-color: #f40404;
 }
 
 .skills {
-    border-color: #FF9800;
+    border-color: #f40404;
 }
 
 .interests {
-    border-color: #E91E63;
+    border-color:#f40404;
 }
+
+/*retour */
+.back-button {
+    background-color: #cb0000; /* Bright blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(253, 13, 13, 0.5); /* Subtle glow effect */
+    align-self: center; /* Center the button horizontally */
+}
+
+.back-button:hover {
+    background-color: #a00000; /* Darker blue on hover */
+}
+
+
