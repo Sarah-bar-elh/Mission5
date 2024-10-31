@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.base {
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info.name  {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.info p {
+    color: #7105fe;
+}
+
+/*.photo {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 10px solid #e768d4;
+    border-radius: 50%;
+}*/
+.photo {
+    width: 300px; /* Taille du cercle */
+    height: 100px; /* Taille du cercle */
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+    border: 2px solid #ddd; /* Bordure pour un effet de cercle */
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+
+
+/* Sections */
+.section {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Entrée (ligne) avec div gauche et droite */
+.entry {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.entry .Gauche {
+    width: 120px;
+    color: #333;
+    font-weight: bold;
+}
+
+.entry .Droite {
+    color: #555;
+    flex: 1;
+}
+
+/* pour voir les bordure */
+.formation {
+    border-color: #4CAF50;
+}
+
+.experience {
+    border-color: #2196F3;
+}
+
+.skills {
+    border-color: #FF9800;
+}
+
+.interests {
+    border-color: #E91E63;
+}
